@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas Drawing App </title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+    
+        <canvas id="canvas" value="#000000"></canvas>
+        <div class="tools">
+            <button id="clr">clear canvas</button>
+            <button id="erase">Eraser</button>
+            <button id="pen">Pen</button>
+            
+            <button id="toolsOpen">Tools</button>
+
+            <div id="tools">
+              <label>Change pen size</label>:  <input type="range" id="rangeSlider" value="4">
+            <br>
+           <label><strong>Select a color</strong></label>: <input type="color" id="col" value="#ff0000">
+           <br>
+    <label><strong>select a background color</strong></label> : <input type="color" id="bg">
+    <br>
+    <label>Change opacity</label>:  <input type="range" id="opacityRange" min="0" max="1" step="0.1" value="1">
+    
+            <br>
+            </div>
+        </div>
+    </body>
+</html>
