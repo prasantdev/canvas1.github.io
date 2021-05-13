@@ -153,6 +153,38 @@ var count = 0;
      }
 
  })
+  
+  //Download
+
+ 
+
+ function generateImg(){
+
+    let el= document.createElement('a');
+
+    el.setAttribute("id","download");
+
+    var dnlName = 'img_'+Date.now()+'.png';
+
+    el.setAttribute("download", dnlName);
+
+    el.setAttribute("href",canvas.toDataURL());
+
+    el.setAttribute("target", "_blank");
+
+        
+
+    
+
+       canvas.append(el);
+
+        document.getElementById('download').click();
+
+        document.getElementById('download').remove();
+
+};
+
+document.getElementById('downloadBtn').addEventListener('click',generateImg);
 
  
 
