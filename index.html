@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Canvas Drawing App </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="stylesheet">
-        <script src="main.js"></script>
+        <title>Canvas Drawing app</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" charset="utf-8" src='main.js'>
+          
+        </script>
     </head>
     <body>
     
@@ -15,7 +16,7 @@
             <button id="pen">Pen</button>
             
             <button id="toolsOpen">Tools</button>
-            <button id="downloadBtn">Download</button>
+            <a href="" id="download"><button>Download</button></a>
             <div id="tools">
               <label>Change pen size</label>:  <input type="range" id="rangeSlider" value="4">
             <br>
@@ -24,7 +25,6 @@
     <label><strong>select a background color</strong></label> : <input type="color" id="bg">
     <br>
     <label>Change opacity</label>:  <input type="range" id="opacityRange" min="0" max="1" step="0.1" value="1">
-    
             <br>
             </div>
         </div>
