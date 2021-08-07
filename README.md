@@ -1,2 +1,2 @@
 # canvas1.github.io
-My first painting project
+just a canvas drawing site
