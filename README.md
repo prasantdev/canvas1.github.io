@@ -1,2 +1,2 @@
-# canvas1.github.io
+# drawing-canvas
 just a canvas drawing site
