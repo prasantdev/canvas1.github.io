@@ -22,9 +22,7 @@ window.addEventListener('load', function () {
     canvas.addEventListener(downEvent, function (e) {
         painting = true;
         draw(e);
-        // console.log(e.touches[0]);
     })
-    // var download = document.getElementById("download");
 
     canvas.addEventListener(upEvent, function () {
         let fName = new Date().getTime().toString() + "cvs.png";
@@ -37,30 +35,9 @@ window.addEventListener('load', function () {
 
     canvas.addEventListener(moveEvent, draw)
 
-
-    // //mouse events
-    // canvas.addEventListener('mousedown', function (e) {
-    //     painting = true;
-    //     draw(e);
-
-    // })
-
-    // canvas.addEventListener('mouseup', function () {
-    //     let fName = new Date().getTime().toString() + "cvs.png";
-    //     painting = false;
-    //     ctx.beginPath();
-    //     var cvs = canvas.toDataURL();
-    //     download.setAttribute("href", cvs);
-    //     download.setAttribute('download', fName);
-    // })
-
-    // canvas.addEventListener('mousemove', draw)
-
     //get color inputs
     var col = document.getElementById("col");
     var bg = document.getElementById("bg");
-
-
 
     //change background             
 
@@ -68,13 +45,10 @@ window.addEventListener('load', function () {
         canvas.style.background = bg.value;
     })
 
-
-
     // Clear canvas              
     document.getElementById("clr").addEventListener("click", function () {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
     })
-
 
     //Eraser
     var erase = false;
@@ -89,13 +63,10 @@ window.addEventListener('load', function () {
 
 
     // tools
-    var count = 0;
+    let count = 0;
 
     var openButton = document.getElementById("toolsOpen");
     openButton.addEventListener("click", function () {
-
-
-
         count++;
         if (count % 2 === 1) {
             document.getElementById("tools").style.display = "block"
